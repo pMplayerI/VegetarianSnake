@@ -100,11 +100,13 @@ public class MainFrame extends JPanel implements Runnable {
 //				Vẽ ô vuông
 //				g.fillRect(i*ZOOM, j*ZOOM, ZOOM-2, ZOOM-2);		
 				
-//				Vẽ mồi
+//				Vẽ thức ăn
 				if (bg[i][j] == 1) {
 					g.setColor(Color.red);
 					g.fillRoundRect(i*ZOOM, j*ZOOM, ZOOM-2, ZOOM-2, ZOOM-2, ZOOM-2);
-					g.setColor(Color.white);
+					
+//					Xóa màu thừa của thức ăn trên các ô vuông
+//					g.setColor(Color.white);
 				}
 			}
 	}
